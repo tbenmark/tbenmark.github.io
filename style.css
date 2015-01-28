@@ -1,0 +1,78 @@
+html {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.royal {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+#nameHolder {
+  text-align: center;
+  background: #CCC;
+  width: 40%;
+  margin: 150px auto 0 auto;
+}
+
+#nameHolder > h1 {
+  font-size: 4em;
+}
+
+.menu {
+  text-align: right;
+  width: 8%;
+  font-size: 1.3em;
+  font-weight: 300;
+  position: absolute;
+  bottom: 20;
+  right: 80;
+  background-color: #CCC;
+  padding-right: 1%;
+}
+
+.menu > p {
+  cursor: pointer;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+img.blur1 {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+h1.blur2:focus, h1.blur2:hover {
+  -webkit-filter: blur(1px); 
+  filter: blur(1px); 
+  filter: none; 
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); 
+}
+
+#nameHolder:focus, #nameHolder:hover {
+  -webkit-filter: blur(1px); 
+  filter: blur(1px); 
+  filter: none; 
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); 
+}
