@@ -58,6 +58,15 @@ body {
 
 .about {
   margin: 50px 0;
+  color: black;
+}
+
+.aboutTitle {
+  font-size: 2em;
+}
+
+.highlight {
+  background-color: #CCC;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
